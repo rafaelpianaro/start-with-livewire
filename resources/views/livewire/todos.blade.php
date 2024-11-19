@@ -1,7 +1,17 @@
 <div>
-    <input type="text" wire:model="todo">
+    <form wire:submit='add'>
+        {{-- <input type="text" wire:model="todo"> --}}
+        {{-- <input type="text" wire:model.live.debounce="todo"> --}}
+        {{-- <input type="text" wire:model.live.throttle.500ms="todo"> --}}
+        {{-- <input type="text" wire:model.live.debounce.500ms="todo"> --}}
+        {{-- <input type="text" wire:model.change="todo"> --}}
+        <input type="text" wire:model.blur="todo">
 
-    <button type="button" wire:click="add">Add</button>
+        <span>Current todo: {{ $todo }}</span>
+
+        <button type="submit">Add</button>
+    </form>
+
 
     <ul>
         @foreach($todos as $todo)
