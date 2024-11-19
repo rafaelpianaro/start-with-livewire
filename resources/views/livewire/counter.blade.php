@@ -7,7 +7,10 @@
         </div>
     @endif
 
-    <button wire:click='increment'>+</button>
+    {{-- <button wire:click='increment'>+</button> --}}
+    {{-- <button wire:click.throttle.1000ms='increment'>+</button> --}}
+    {{-- <button wire:click.window='increment'>+</button> --}}
+    <button wire:click='increment(2)'>+</button>
     <button wire:click='decrement'>-</button>
     
     <style>

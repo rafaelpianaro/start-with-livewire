@@ -9,10 +9,11 @@ class Counter extends Component
     public $count = 0;
     public $errorMessage = '';
  
-    public function increment()
+    public function increment($by)
     {
         $this->errorMessage = ''; // Limpa a mensagem de erro
-        $this->count++;
+        // $this->count++;
+        $this->count = $this->count + $by;
     }
  
     public function decrement()
