@@ -4,10 +4,10 @@
         {{-- <input type="text" wire:model.live.debounce="todo"> --}}
         {{-- <input type="text" wire:model.live.throttle.500ms="todo"> --}}
         {{-- <input type="text" wire:model.live.debounce.500ms="todo"> --}}
-        {{-- <input type="text" wire:model.change="todo"> --}}
-        <input type="text" wire:model.blur="todo">
+        <input type="text" wire:model.change="todo">
+        {{-- <input type="text" wire:model.blur="todo"> --}}
 
-        <span>Current todo: {{ $todo }}</span>
+        {{-- <span>Current todo: {{ $todo }}</span> --}}
 
         <button type="submit">Add</button>
     </form>
