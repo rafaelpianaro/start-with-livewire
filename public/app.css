@@ -1,0 +1,56 @@
+/* Reseta margens e paddings padrão */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Layout geral */
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+/* Navegação lateral */
+nav {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Link ativo */
+nav a.current {
+    background-color: #007bff; /* Destaque azul para o link ativo */
+    font-weight: bold;         /* Texto em negrito */
+    color: white;              /* Garante que o texto permaneça legível */
+}
+
+/* Hover para links não ativos */
+nav a:not(.current):hover {
+    background-color: #495057;
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow: auto;
+}
