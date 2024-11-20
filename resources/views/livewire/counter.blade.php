@@ -12,23 +12,9 @@
     {{-- <button wire:click.window='increment'>+</button> --}}
     <button wire:click='increment(2)'>+</button>
     <button wire:click='decrement'>-</button>
-    
-    <style>
-        .counter {
-            text-align: center;
-            margin-top: 20px;
-        }
-    
-        .counter button {
-            margin: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    
-        .error {
-            margin-top: 10px;
-        }
-    </style>
 </div>
+
+@push('styles')
+    <link rel="stylesheet" href="/css/counter.css">
+@endpush
 
