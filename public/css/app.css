@@ -16,7 +16,7 @@ body {
 
 /* Navegação lateral */
 nav {
-    width: 250px;
+    width: 180px;
     background-color: #343a40;
     color: white;
     display: flex;

@@ -19,6 +19,12 @@
         <label>
             <span>Content</span>
             <textarea wire:model="content"></textarea>
+            <small>Words:
+                <span x-text="$wire.content.split(' ').length - 1"></span>
+            </small>
+            {{-- <small>Characters:
+                <span x-text="$wire.content.length"></span>
+            </small> --}}
             @error('content') <span>{{ $message }}</span>@enderror
         </label>
 
