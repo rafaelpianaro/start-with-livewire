@@ -1,0 +1,90 @@
+/* Estilizando o contêiner principal */
+div {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizando o título */
+h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Mensagem de sucesso */
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid green;
+    background-color: #eaf7ea;
+    color: #2d6a2d;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Estilizando os labels */
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Estilizando o texto do label */
+label span {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Estilizando os inputs e textarea */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Estilizando o checkbox */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Estilizando o botão de salvar */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilizando mensagens de erro */
+span.error {
+    font-size: 12px;
+    color: #d9534f;
+    margin-top: 5px;
+}

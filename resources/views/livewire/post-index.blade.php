@@ -1,6 +1,9 @@
 <div>
     <h2>Posts:</h2>
 
+    <button wire:click="create">New Post</button>
+    {{-- <button wire:click="redirectToCreate">New Post</button> --}}
+
     <table>
         <thead>
             <tr>
@@ -27,3 +30,7 @@
         </tbody>
     </table>
 </div>
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/post-index.css') }}">
+@endpush

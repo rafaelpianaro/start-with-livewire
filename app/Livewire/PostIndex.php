@@ -8,12 +8,17 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 
 #[Title('Posts')]
-class PostCrud extends Component
+class PostIndex extends Component
 {
 
     public function delete(Post $post)
     {
         $post->delete();
+    }
+
+    public function create()
+    {
+        return redirect()->route('posts.create');
     }
 
     public function render()
@@ -23,7 +28,7 @@ class PostCrud extends Component
         //     'postId' => $posts[0]->id
         // ]);
         // dd($posts[0]->title);
-        return view('livewire.post-crud', [
+        return view('livewire.post-index', [
             'posts' => $posts,
         ]);
         // return view('livewire.post-crud', [
