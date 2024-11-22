@@ -14,7 +14,7 @@ class PostFactory extends Factory
         return [
             'title' => $this->faker->sentence,
             'content' => $this->faker->paragraphs(3, true),
-            'published' => $this->faker->boolean(50),
+            'is_published' => $this->faker->boolean(50),
         ];
     }
 }

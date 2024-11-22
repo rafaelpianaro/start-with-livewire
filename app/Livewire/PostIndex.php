@@ -18,7 +18,8 @@ class PostIndex extends Component
 
     public function create()
     {
-        return redirect()->route('posts.create');
+        // return redirect()->route('posts.create');
+        $this->redirect('/posts/create', navigate: true);
     }
 
     public function render()

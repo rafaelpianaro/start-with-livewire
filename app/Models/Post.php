@@ -17,8 +17,18 @@ class Post extends Model
     protected $fillable = [
         'title',
         'content',
-        'published',
+        'is_published',
+        'is_archived',
     ];
+
+    /**
+     * Alterna o estado de arquivamento do post.
+     */
+    public function changeArchive()
+    {
+        $this->is_archived  = !$this->is_archived ;
+        $this->save();
+    }
 
     /**
      * The attributes that should be cast.

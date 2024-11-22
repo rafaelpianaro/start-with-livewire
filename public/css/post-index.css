@@ -85,3 +85,42 @@ button[wire\\:confirm]::after {
     font-size: 12px;
     color: #666;
 }
+
+/* ############################################### ARCHIVE */
+
+.archived {
+    background-color: #f5f5f5;
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Estilo base do botão */
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para "Archive" */
+button.btn.btn-archive {
+    background-color: #007bff;
+    color: white;
+}
+
+button.btn.btn-archive:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para "Unarchive" */
+button.btn.btn-unarchive {
+    background-color: #6c757d;
+    color: white;
+}
+
+button.btn.btn-unarchive:hover {
+    background-color: #5a6268;
+}
+

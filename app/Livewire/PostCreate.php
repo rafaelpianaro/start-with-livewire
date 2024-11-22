@@ -20,6 +20,7 @@ class PostCreate extends Component
     public $content = '';
     
     public $published = false;
+    public $archive = false;
 
     /**
      * Define as regras de validação.
@@ -65,11 +66,12 @@ class PostCreate extends Component
         Post::create([
             'title' => $this->title,
             'content' => $this->content,
-            'published' => $this->published,
+            'is_published' => $this->published,
+            'is_archive' => $this->archive,
         ]);
 
         session()->flash('message', 'Post created successfully.');
-        return redirect()->route('posts.index');
+        $this->redirect('/posts', navigate: true);
     }
 
     public function render()
